@@ -1,0 +1,149 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFEAC5;
+
+}
+
+header{
+    background-color: #6C4E31;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    gap: 3rem 2rem;
+    justify-content: end;
+}
+
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar a{
+    color: #FFEAC5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover{
+    color: #FFDBB5;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+hero p{
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #603F26;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover{
+    background: #FFDBB5;
+    color: #603F26;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.section{
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p{
+    text-align: justify;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 1rem;
+}
+
+.card{
+    background-color: #603F26;
+    border: 1px solid #6C4E31;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0 , 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.card p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer{
+    background-color: #603F26;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+@media (max-width: 800px){
+    .hero h2{
+        font-size: 2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+}
